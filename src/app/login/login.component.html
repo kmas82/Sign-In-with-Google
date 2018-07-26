@@ -1,0 +1,20 @@
+ <!-- <div id="googleBtn">Google</div>  -->
+<div class="loginCard">
+  <mat-card>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="User Name*" [(ngModel)]="username">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" style="width:325px">
+      <input matInput placeholder="Password*" [type]="type" [(ngModel)]="password">
+    </mat-form-field>
+    <span class="icon">
+      <i class="material-icons" (mousedown)="togglePassword()" (mouseup)="togglePassword()">visibility</i>
+    </span>
+    <div>
+       <button class="btn" (click)="login()" mat-raised-button>Login</button> 
+      <!-- <button class="btn" (click)="navSignUp()" mat-raised-button >Sign Up</button> -->
+      <button class="btn" id="googleBtn"  mat-raised-button >SignIn with Google</button>
+    </div>
+  </mat-card>
+</div>
